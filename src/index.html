@@ -4,21 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Aniversário</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/Notas_240816_153021_0.png" alt="Foto Thaíssy">
             <p class="hero__text">
-                Meu aniversário será em
+                Meu aniversário será em <span id="contador"></span>
             </p>
-
-</div>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        14/12/2025
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Horário</b>
+                        19:00h
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Buffet Leyla Malluf - Cuiabá -MT
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">Confirme sua Presença</a>
+            </div>
+    </div>
     </header>
+    <section class="event event--space" >
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Espaço</h2>
+                <p class="event__details__description">
+                    O Buffet Leyla Malluf é o lugar perfeito para quem quer celebrar em grande estilo! Com um espaço amplo e aconchegante. Dá para aproveitar uma área externa super agradável ou curtir o salão climatizado, tudo pensado para o conforto e diversão dos convidados.
+                </p>
+            </div>
+            <img class="event__image" src="./images/espaco.png" alt="Buffet Leyla Malluf">
+        </div>
+    </section>
+    <section class="event event--drinks event--image-left" >
+        <div class="container" data-aos="fade-left"> 
+            <div class="event__details">
+                <h2 class="event__details__title">Open Bar</h2>
+                <p class="event__details__description">
+                    Com o open bar, você vai poder se deliciar com bebidas geladas e refrescantes, garantindo que ninguém fique com o copo vazio!
+                </p>
+            </div>
+            <img class="event__image" src="./images/bebidasone.png" alt="Buffet Leyla Malluf">
+        </div>
+    </section>
+    <section class="event event--food" >
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Comidinhas Deliciosas</h2>
+                <p class="event__details__description">
+                    Teremos também deliciosas opções de comidinhas para agradar a todos os paladares.
+                </p>
+            </div>
+            <img class="event__image" src="./images/comidas.png" alt="Buffet Leyla Malluf">
+        </div>
+    </section>
+    <section class="event event--cake event--image-left" >
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">A Hora do Parabéns!!</h2>
+                <p class="event__details__description">
+                    E é claro, o momento mais doce da noite: a hora do parabéns! Não perca a oportunidade de me ajudar a apagar as velinhas e fazer aquele pedido especial.
+                </p>
+            </div>
+            <img class="event__image" src="./images/bolo-de-aniversario-simples-3.png" alt="Buffet Leyla Malluf">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
-</html>.
+</html>
